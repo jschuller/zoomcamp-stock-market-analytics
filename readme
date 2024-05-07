@@ -1,1 +1,13 @@
 Placeholder for Stock Market Analytics Zoomcamp 2024
+
+> git config pull.rebase true
+>- Git will automatically rebase your local commits on top of the remote branch's commits when you perform a 'git pull' operation.
+>- Rebasing helps to maintain a linear commit history, which can make the project's history easier to understand and navigate.
+
+> git config pull.ff only
+>- A fast-forward merge occurs when the remote branch's commit history is a direct ancestor of the local branch's commit history. 
+>- In this case, Git can simply "fast-forward" the local branch to the remote branch's commit without creating a merge commit. This helps to keep the commit history clean and linear.
+
+> git pull
+>- This command fetches the latest commits from the remote repository and merges them into the local repository.
+>- Since the "pull.rebase" and "pull.ff" options were set, Git will automatically rebase the local commits on top of the remote commits and perform a fast-forward merge if possible. 
